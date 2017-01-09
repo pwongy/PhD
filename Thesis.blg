@@ -1,0 +1,18 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
+A level-1 auxiliary file: Preamble/preamble.aux
+A level-1 auxiliary file: Introduction/introduction.aux
+A level-1 auxiliary file: Background/background.aux
+A level-1 auxiliary file: Methodology/development.aux
+A level-1 auxiliary file: Simulations/boundary_conditions.aux
+A level-1 auxiliary file: Validation/validation.aux
+A level-1 auxiliary file: Simulations/vascular_structure.aux
+A level-1 auxiliary file: Simulations/time_dependency.aux
+A level-1 auxiliary file: Conclusions/conclusions.aux
+A level-1 auxiliary file: Appendix/appendix.aux
+The style file: IEEEtran.bst
+Database file #1: references.bib
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.

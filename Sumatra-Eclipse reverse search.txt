@@ -1,0 +1,1 @@
+"C:\eclipse\inverse_search.bat" "%f" %l

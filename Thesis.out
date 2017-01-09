@@ -1,0 +1,137 @@
+\BOOKMARK [0][-]{copyright.0}{Copyright Statement}{}% 1
+\BOOKMARK [0][-]{front.0}{Front Matter}{}% 2
+\BOOKMARK [1][-]{title.1}{Title Page}{front.0}% 3
+\BOOKMARK [1][-]{chapter*.2}{Declaration}{front.0}% 4
+\BOOKMARK [1][-]{chapter*.3}{Abstract}{front.0}% 5
+\BOOKMARK [1][-]{dedication.1}{Dedication}{front.0}% 6
+\BOOKMARK [1][-]{chapter*.6}{Preface}{front.0}% 7
+\BOOKMARK [1][-]{chapter*.7}{Acknowledgements}{front.0}% 8
+\BOOKMARK [1][-]{contents.1}{Table of Contents}{front.0}% 9
+\BOOKMARK [1][-]{section*.9}{List of Figures}{front.0}% 10
+\BOOKMARK [1][-]{section*.10}{List of Tables}{front.0}% 11
+\BOOKMARK [1][-]{chapter*.11}{List of Publications}{front.0}% 12
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 13
+\BOOKMARK [1][-]{section.1.1}{1.1 Research Motivation}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 The Bigger Picture}{section.1.1}% 15
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 The Cochlear Implant Performance Plateau}{section.1.1}% 16
+\BOOKMARK [1][-]{section.1.2}{1.2 Thesis Goals}{chapter.1}% 17
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Enabling Knowledge Development via Computational Modelling}{section.1.2}% 18
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Addressing Untested Assumptions in the Literature}{section.1.2}% 19
+\BOOKMARK [1][-]{section.1.3}{1.3 Dissertation Structure}{chapter.1}% 20
+\BOOKMARK [0][-]{chapter.2}{2 Anatomy and Physiology of the Peripheral Auditory System}{}% 21
+\BOOKMARK [1][-]{section.2.1}{2.1 Anatomy Review}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Overview of the Auditory Pathway}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Detailed Structure of the Cochlea}{section.2.1}% 24
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Comparison of Human and Guinea Pig Cochleae}{section.2.1}% 25
+\BOOKMARK [1][-]{section.2.2}{2.2 Hearing Physiology}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Normal Hearing}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Hearing Loss}{section.2.2}% 28
+\BOOKMARK [1][-]{section.2.3}{2.3 Chapter Summary}{chapter.2}% 29
+\BOOKMARK [0][-]{chapter.3}{3 Literature Review}{}% 30
+\BOOKMARK [1][-]{section.3.1}{3.1 Cochlear Implants}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Components and Function}{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Stimulation Mechanics}{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 Efficacy and Unsolved Challenges}{section.3.1}% 34
+\BOOKMARK [1][-]{section.3.2}{3.2 Bioelectric Modelling}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Expected Physics}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Numerical Methods}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Neural Excitation}{section.3.2}% 38
+\BOOKMARK [1][-]{section.3.3}{3.3 Electric Models of the Cochlea}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Lumped-Element Models}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Volume Conduction Models}{section.3.3}% 41
+\BOOKMARK [1][-]{section.3.4}{3.4 Research Questions}{chapter.3}% 42
+\BOOKMARK [0][-]{chapter.4}{4 Model Development}{}% 43
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.2}{4.2 Preliminary Considerations}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Modelling Workflow}{section.4.2}% 46
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Geometry and Imaging}{section.4.2}% 47
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Material Properties}{section.4.2}% 48
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Electric Loads}{section.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Boundary Conditions}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 Numerical Solution Type and Software}{section.4.2}% 51
+\BOOKMARK [2][-]{subsection.4.2.7}{4.2.7 Computer Hardware}{section.4.2}% 52
+\BOOKMARK [1][-]{section.4.3}{4.3 Proof of Concept}{chapter.4}% 53
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Introduction}{section.4.3}% 54
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Method}{section.4.3}% 55
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Mesh Result}{section.4.3}% 56
+\BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Discussion}{section.4.3}% 57
+\BOOKMARK [1][-]{section.4.4}{4.4 The Guinea Pig Model}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Introduction}{section.4.4}% 59
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Method}{section.4.4}% 60
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Mesh Result}{section.4.4}% 61
+\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Discussion}{section.4.4}% 62
+\BOOKMARK [1][-]{section.4.5}{4.5 The Human Model}{chapter.4}% 63
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Introduction}{section.4.5}% 64
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Method}{section.4.5}% 65
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Mesh Result}{section.4.5}% 66
+\BOOKMARK [2][-]{subsection.4.5.4}{4.5.4 Discussion}{section.4.5}% 67
+\BOOKMARK [1][-]{section.4.6}{4.6 Chapter Summary}{chapter.4}% 68
+\BOOKMARK [0][-]{chapter.5}{5 Boundary Conditions for Monopolar Simulations: A Preliminary Investigation}{}% 69
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 70
+\BOOKMARK [1][-]{section.5.2}{5.2 Grounding Location and Size Effects}{chapter.5}% 71
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Method}{section.5.2}% 72
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Results}{section.5.2}% 73
+\BOOKMARK [1][-]{section.5.3}{5.3 Multiscale Simulation of the Human Head}{chapter.5}% 74
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Method}{section.5.3}% 75
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Results}{section.5.3}% 76
+\BOOKMARK [1][-]{section.5.4}{5.4 Discussion}{chapter.5}% 77
+\BOOKMARK [1][-]{section.5.5}{5.5 Conclusions}{chapter.5}% 78
+\BOOKMARK [0][-]{chapter.6}{6 Validation of the Guinea Pig Model}{}% 79
+\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 80
+\BOOKMARK [1][-]{section.6.2}{6.2 Method}{chapter.6}% 81
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 In silico Modelling}{section.6.2}% 82
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 In vivo Measurements}{section.6.2}% 83
+\BOOKMARK [1][-]{section.6.3}{6.3 Results}{chapter.6}% 84
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 In vivo Data}{section.6.3}% 85
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Mesh Convergence}{section.6.3}% 86
+\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Sensitivity of Terminal Voltage Predictions}{section.6.3}% 87
+\BOOKMARK [2][-]{subsection.6.3.4}{6.3.4 Effect on Current Pathways}{section.6.3}% 88
+\BOOKMARK [2][-]{subsection.6.3.5}{6.3.5 Estimated Impact on Neural Excitation}{section.6.3}% 89
+\BOOKMARK [1][-]{section.6.4}{6.4 Discussion}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Modelling Workflow}{section.6.4}% 91
+\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 Material Properties}{section.6.4}% 92
+\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Boundary Conditions}{section.6.4}% 93
+\BOOKMARK [2][-]{subsection.6.4.4}{6.4.4 Study Limitations}{section.6.4}% 94
+\BOOKMARK [1][-]{section.6.5}{6.5 Conclusions}{chapter.6}% 95
+\BOOKMARK [0][-]{chapter.7}{7 The Role of the Cochlear Vasculature in Volume Conduction}{}% 96
+\BOOKMARK [1][-]{section.7.1}{7.1 Introduction}{chapter.7}% 97
+\BOOKMARK [1][-]{section.7.2}{7.2 Method}{chapter.7}% 98
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 MicroCT Imaging with Microfil}{section.7.2}% 99
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Reconstruction from sTSLIM}{section.7.2}% 100
+\BOOKMARK [1][-]{section.7.3}{7.3 Results}{chapter.7}% 101
+\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Degrees of Freedom and Solution Times}{section.7.3}% 102
+\BOOKMARK [2][-]{subsection.7.3.2}{7.3.2 Voltage along the Array}{section.7.3}% 103
+\BOOKMARK [2][-]{subsection.7.3.3}{7.3.3 Current Pathways}{section.7.3}% 104
+\BOOKMARK [2][-]{subsection.7.3.4}{7.3.4 Activating Function}{section.7.3}% 105
+\BOOKMARK [1][-]{section.7.4}{7.4 Discussion}{chapter.7}% 106
+\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Local Effects}{section.7.4}% 107
+\BOOKMARK [2][-]{subsection.7.4.2}{7.4.2 Global Effects}{section.7.4}% 108
+\BOOKMARK [2][-]{subsection.7.4.3}{7.4.3 Study Limitations}{section.7.4}% 109
+\BOOKMARK [1][-]{section.7.5}{7.5 Conclusions}{chapter.7}% 110
+\BOOKMARK [0][-]{chapter.8}{8 Incorporating Time-Dependent Effects into Models of the Cochlea}{}% 111
+\BOOKMARK [1][-]{section.8.1}{8.1 Introduction}{chapter.8}% 112
+\BOOKMARK [1][-]{section.8.2}{8.2 Method}{chapter.8}% 113
+\BOOKMARK [2][-]{subsection.8.2.1}{8.2.1 Fourier Expansion of the Stimulating Pulse}{section.8.2}% 114
+\BOOKMARK [2][-]{subsection.8.2.2}{8.2.2 Assignment of Frequency-Dependent Material Properties}{section.8.2}% 115
+\BOOKMARK [2][-]{subsection.8.2.3}{8.2.3 Reconstruction of the Time-Domain Signal}{section.8.2}% 116
+\BOOKMARK [2][-]{subsection.8.2.4}{8.2.4 Resistive Formulation}{section.8.2}% 117
+\BOOKMARK [1][-]{section.8.3}{8.3 Results}{chapter.8}% 118
+\BOOKMARK [2][-]{subsection.8.3.1}{8.3.1 Solution Times}{section.8.3}% 119
+\BOOKMARK [2][-]{subsection.8.3.2}{8.3.2 Convergence of the Stimulus Waveform}{section.8.3}% 120
+\BOOKMARK [2][-]{subsection.8.3.3}{8.3.3 Output Reconstructions}{section.8.3}% 121
+\BOOKMARK [2][-]{subsection.8.3.4}{8.3.4 Comparison with in vivo Data}{section.8.3}% 122
+\BOOKMARK [1][-]{section.8.4}{8.4 Discussion}{chapter.8}% 123
+\BOOKMARK [2][-]{subsection.8.4.1}{8.4.1 Modelling Considerations}{section.8.4}% 124
+\BOOKMARK [2][-]{subsection.8.4.2}{8.4.2 Implications for Neural Excitation}{section.8.4}% 125
+\BOOKMARK [1][-]{section.8.5}{8.5 Conclusions}{chapter.8}% 126
+\BOOKMARK [0][-]{chapter.9}{9 Conclusions}{}% 127
+\BOOKMARK [1][-]{section.9.1}{9.1 Contributions of the Thesis}{chapter.9}% 128
+\BOOKMARK [1][-]{section.9.2}{9.2 Future Research Directions}{chapter.9}% 129
+\BOOKMARK [1][-]{section.9.3}{9.3 Closing Remarks}{chapter.9}% 130
+\BOOKMARK [0][-]{section*.211}{Appendices}{}% 131
+\BOOKMARK [1][-]{Appendix.a.A}{A MATLAB Function Licences}{section*.211}% 132
+\BOOKMARK [1][-]{Appendix.a.B}{B Streamline Seeding}{section*.211}% 133
+\BOOKMARK [1][-]{Appendix.a.C}{C Ethics Approval}{section*.211}% 134
+\BOOKMARK [1][-]{Appendix.a.D}{D Microfil Specification Sheet}{section*.211}% 135
+\BOOKMARK [1][-]{Appendix.a.E}{E Digital Files}{section*.211}% 136
+\BOOKMARK [0][-]{section*.214}{References}{}% 137

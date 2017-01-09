@@ -1,0 +1,192 @@
+\contentsline {chapter}{Front Matter}{}{Doc-Start}
+\contentsline {section}{Declaration}{ii}{chapter*.2}
+\contentsline {section}{Abstract}{iii}{chapter*.3}
+\contentsline {section}{Preface}{vi}{chapter*.6}
+\contentsline {section}{Acknowledgements}{xi}{chapter*.7}
+\contentsline {section}{List of Figures}{xix}{section*.9}
+\contentsline {section}{List of Tables}{xxiii}{section*.10}
+\contentsline {section}{List of Publications}{xxv}{chapter*.11}
+\cftpagenumbersoff {chapter}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Research Motivation}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}The Bigger Picture}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}The Cochlear Implant Performance Plateau}{4}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Thesis Goals}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Enabling Knowledge Development via Computational Modelling}{6}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Addressing Untested Assumptions in the Literature}{8}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Dissertation Structure}{9}{section.1.3}
+\contentsline {chapter}{\numberline {2}Anatomy and Physiology of the Peripheral Auditory System}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Anatomy Review}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Overview of the Auditory Pathway}{11}{subsection.2.1.1}
+\contentsline {subsubsection}{The External Ear}{12}{section*.20}
+\contentsline {subsubsection}{The Middle Ear}{12}{section*.23}
+\contentsline {subsubsection}{The Inner Ear}{14}{section*.24}
+\contentsline {subsubsection}{Neural Pathways to the Auditory Cortex}{17}{section*.27}
+\contentsline {subsection}{\numberline {2.1.2}Detailed Structure of the Cochlea}{18}{subsection.2.1.2}
+\contentsline {subsubsection}{Directional Terms}{19}{section*.30}
+\contentsline {subsubsection}{Fluid Spaces and Structural Support}{19}{section*.32}
+\contentsline {subsubsection}{Neural Structures}{22}{section*.36}
+\contentsline {subsubsection}{Vascular Structures}{24}{section*.37}
+\contentsline {subsection}{\numberline {2.1.3}Comparison of Human and Guinea Pig Cochleae}{28}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Hearing Physiology}{31}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Normal Hearing}{31}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Hearing Loss}{34}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Chapter Summary}{35}{section.2.3}
+\contentsline {chapter}{\numberline {3}Literature Review}{36}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cochlear Implants}{36}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Components and Function}{37}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Stimulation Mechanics}{39}{subsection.3.1.2}
+\contentsline {subsubsection}{Charge Balance}{40}{section*.51}
+\contentsline {subsubsection}{Electrode Configurations}{43}{section*.55}
+\contentsline {subsection}{\numberline {3.1.3}Efficacy and Unsolved Challenges}{46}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Bioelectric Modelling}{47}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Expected Physics}{47}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Numerical Methods}{50}{subsection.3.2.2}
+\contentsline {subsubsection}{Rationale for Computational Modelling}{50}{section*.60}
+\contentsline {subsubsection}{Discretisation and the Finite Difference Method}{52}{section*.61}
+\contentsline {subsubsection}{The Finite Element Method}{53}{section*.63}
+\contentsline {subsubsection}{The Boundary Element Method}{55}{section*.65}
+\contentsline {subsection}{\numberline {3.2.3}Neural Excitation}{55}{subsection.3.2.3}
+\contentsline {subsubsection}{Response of the Neural Membrane}{56}{section*.66}
+\contentsline {subsubsection}{Theoretical Models}{57}{section*.68}
+\contentsline {section}{\numberline {3.3}Electric Models of the Cochlea}{61}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Lumped-Element Models}{61}{subsection.3.3.1}
+\contentsline {subsubsection}{Von B{\'e}k{\'e}sy{} (1951)}{61}{section*.70}
+\contentsline {subsubsection}{Johnstone \textit {et\nobreakspace {}al.}{} (1966)}{63}{section*.72}
+\contentsline {subsubsection}{Strelioff (1973)}{64}{section*.74}
+\contentsline {subsubsection}{Black and Clark (1980)}{65}{section*.76}
+\contentsline {subsubsection}{Suesserman and Spelman (1993) \& Machado and Toumazou (1995)}{66}{section*.78}
+\contentsline {subsubsection}{Kral \textit {et\nobreakspace {}al.}{} (1998)}{68}{section*.80}
+\contentsline {subsubsection}{Vanpoucke \textit {et\nobreakspace {}al.}{} (2004)}{69}{section*.82}
+\contentsline {subsection}{\numberline {3.3.2}Volume Conduction Models}{70}{subsection.3.3.2}
+\contentsline {subsubsection}{Girzon (1987)}{70}{section*.84}
+\contentsline {subsubsection}{Finley \textit {et\nobreakspace {}al.}\nobreakspace {}(1987--1990)}{73}{section*.86}
+\contentsline {subsubsection}{Frijns \textit {et\nobreakspace {}al.}{} (1995--2015)}{75}{section*.88}
+\contentsline {subsubsection}{Hanekom (2001--2015)}{79}{section*.91}
+\contentsline {subsubsection}{Rattay \textit {et\nobreakspace {}al.}{} (2001)}{81}{section*.93}
+\contentsline {subsubsection}{Choi \textit {et\nobreakspace {}al.}{} (2001--2014)}{83}{section*.95}
+\contentsline {subsubsection}{Tognola \textit {et\nobreakspace {}al.}{} (2007)}{84}{section*.97}
+\contentsline {subsubsection}{Whiten (2007)}{86}{section*.99}
+\contentsline {subsubsection}{Saba (2012)}{88}{section*.101}
+\contentsline {section}{\numberline {3.4}Research Questions}{90}{section.3.4}
+\contentsline {chapter}{\numberline {4}Model Development}{93}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{93}{section.4.1}
+\contentsline {section}{\numberline {4.2}Preliminary Considerations}{94}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Modelling Workflow}{94}{subsection.4.2.1}
+\contentsline {subsubsection}{Generalised Pipeline}{94}{section*.103}
+\contentsline {subsubsection}{Effect of Uncertainties}{96}{section*.105}
+\contentsline {subsection}{\numberline {4.2.2}Geometry and Imaging}{98}{subsection.4.2.2}
+\contentsline {subsubsection}{Subject-Specific versus Generalised Modelling}{98}{section*.107}
+\contentsline {subsubsection}{Selection Criteria for Image Data}{99}{section*.108}
+\contentsline {subsubsection}{Comparison of Imaging Modalities}{101}{section*.110}
+\contentsline {subsection}{\numberline {4.2.3}Material Properties}{105}{subsection.4.2.3}
+\contentsline {subsubsection}{Resistivity Values}{106}{section*.113}
+\contentsline {subsubsection}{Permittivity Values}{106}{section*.122}
+\contentsline {subsection}{\numberline {4.2.4}Electric Loads}{113}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Boundary Conditions}{114}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Numerical Solution Type and Software}{115}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Computer Hardware}{118}{subsection.4.2.7}
+\contentsline {section}{\numberline {4.3}Proof of Concept}{119}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Introduction}{119}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Method}{119}{subsection.4.3.2}
+\contentsline {subsubsection}{Imaging and Reconstruction}{119}{section*.126}
+\contentsline {subsubsection}{Mesh Generation}{123}{section*.129}
+\contentsline {subsection}{\numberline {4.3.3}Mesh Result}{124}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Discussion}{125}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}The Guinea Pig Model}{126}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Introduction}{126}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Method}{127}{subsection.4.4.2}
+\contentsline {subsubsection}{Imaging and Reconstruction}{127}{section*.132}
+\contentsline {subsubsection}{Mesh Generation}{130}{section*.136}
+\contentsline {subsubsection}{Estimating Neuronal Trajectories}{135}{section*.139}
+\contentsline {subsection}{\numberline {4.4.3}Mesh Result}{136}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Discussion}{136}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}The Human Model}{140}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Introduction}{140}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Method}{140}{subsection.4.5.2}
+\contentsline {subsubsection}{Imaging and Reconstruction}{141}{section*.142}
+\contentsline {subsubsection}{Mesh Generation}{143}{section*.147}
+\contentsline {subsection}{\numberline {4.5.3}Mesh Result}{143}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Discussion}{145}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Chapter Summary}{147}{section.4.6}
+\contentsline {chapter}{\numberline {5}Boundary Conditions for Monopolar Simulations: A Preliminary Investigation}{148}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{148}{section.5.1}
+\contentsline {section}{\numberline {5.2}Grounding Location and Size Effects}{150}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Method}{150}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Results}{152}{subsection.5.2.2}
+\contentsline {subsubsection}{Grounding Location}{152}{section*.152}
+\contentsline {subsubsection}{Size}{153}{section*.155}
+\contentsline {section}{\numberline {5.3}Multiscale Simulation of the Human Head}{155}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Method}{156}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Results}{157}{subsection.5.3.2}
+\contentsline {subsubsection}{Model Size and Solution Time}{157}{section*.158}
+\contentsline {subsubsection}{Voltage Distribution}{157}{section*.159}
+\contentsline {subsubsection}{Current Pathways}{158}{section*.162}
+\contentsline {section}{\numberline {5.4}Discussion}{159}{section.5.4}
+\contentsline {section}{\numberline {5.5}Conclusions}{164}{section.5.5}
+\contentsline {chapter}{\numberline {6}Validation of the Guinea Pig Model}{165}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{165}{section.6.1}
+\contentsline {section}{\numberline {6.2}Method}{168}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}\textit {In silico} Modelling}{168}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}\textit {In vivo} Measurements}{171}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Results}{173}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}\textit {In vivo} Data}{173}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Mesh Convergence}{175}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Sensitivity of Terminal Voltage Predictions}{175}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Effect on Current Pathways}{179}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Estimated Impact on Neural Excitation}{179}{subsection.6.3.5}
+\contentsline {section}{\numberline {6.4}Discussion}{183}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Modelling Workflow}{183}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Material Properties}{184}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Boundary Conditions}{186}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Study Limitations}{188}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Conclusions}{188}{section.6.5}
+\contentsline {chapter}{\numberline {7}The Role of the Cochlear Vasculature in Volume Conduction}{190}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{190}{section.7.1}
+\contentsline {section}{\numberline {7.2}Method}{194}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}MicroCT Imaging with Microfil}{194}{subsection.7.2.1}
+\contentsline {subsubsection}{Perfusion}{195}{section*.176}
+\contentsline {subsubsection}{Imaging}{197}{section*.178}
+\contentsline {subsection}{\numberline {7.2.2}Reconstruction from sTSLIM}{198}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Results}{200}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Degrees of Freedom and Solution Times}{200}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Voltage along the Array}{201}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Current Pathways}{201}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Activating Function}{206}{subsection.7.3.4}
+\contentsline {section}{\numberline {7.4}Discussion}{206}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Local Effects}{208}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Global Effects}{209}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Study Limitations}{210}{subsection.7.4.3}
+\contentsline {section}{\numberline {7.5}Conclusions}{211}{section.7.5}
+\contentsline {chapter}{\numberline {8}Incorporating Time-Dependent Effects into Models of the Cochlea}{212}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introduction}{212}{section.8.1}
+\contentsline {section}{\numberline {8.2}Method}{217}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Fourier Expansion of the Stimulating Pulse}{217}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Assignment of Frequency-Dependent Material Properties}{221}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Reconstruction of the Time-Domain Signal}{223}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Resistive Formulation}{223}{subsection.8.2.4}
+\contentsline {section}{\numberline {8.3}Results}{224}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Solution Times}{224}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Convergence of the Stimulus Waveform}{224}{subsection.8.3.2}
+\contentsline {subsubsection}{Comparison of Square and Ramped Stimuli}{225}{section*.196}
+\contentsline {subsubsection}{Variation of Pulse Timings}{228}{section*.199}
+\contentsline {subsection}{\numberline {8.3.3}Output Reconstructions}{230}{subsection.8.3.3}
+\contentsline {subsubsection}{Voltage and Current Waveforms}{230}{section*.201}
+\contentsline {subsubsection}{Activating Function}{232}{section*.204}
+\contentsline {subsection}{\numberline {8.3.4}Comparison with \textit {in vivo}{} Data}{235}{subsection.8.3.4}
+\contentsline {section}{\numberline {8.4}Discussion}{238}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Modelling Considerations}{238}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Implications for Neural Excitation}{241}{subsection.8.4.2}
+\contentsline {section}{\numberline {8.5}Conclusions}{242}{section.8.5}
+\contentsline {chapter}{\numberline {9}Conclusions}{243}{chapter.9}
+\contentsline {section}{\numberline {9.1}Contributions of the Thesis}{243}{section.9.1}
+\contentsline {section}{\numberline {9.2}Future Research Directions}{246}{section.9.2}
+\contentsline {section}{\numberline {9.3}Closing Remarks}{248}{section.9.3}
+\contentsline {chapter}{Appendices}{250}{section*.211}
+\contentsline {chapter}{\numberline {A}MATLAB Function Licences}{250}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Streamline Seeding}{252}{Appendix.a.B}
+\contentsline {chapter}{\numberline {C}Ethics Approval}{256}{Appendix.a.C}
+\contentsline {chapter}{\numberline {D}Microfil Specification Sheet}{260}{Appendix.a.D}
+\contentsline {chapter}{\numberline {E}Digital Files}{267}{Appendix.a.E}
+\cftpagenumberson {chapter}
+\contentsline {chapter}{References}{268}{section*.214}
