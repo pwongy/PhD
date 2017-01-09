@@ -1,0 +1,214 @@
+% Page style from here up to References
+	\pagestyle{fancy}
+	\lhead{{\sffamily \MakeUppercase\leftmark}}
+	\chead{}
+	\rhead{{\sffamily \MakeUppercase\rightmark}}
+	\lfoot{}
+	\cfoot{{\sffamily \thepage}}
+	\rfoot{}
+	
+\chapter{Conclusions}
+
+% Textbox
+\begin{center}
+	\begin{tcolorbox}[title=\boxtitle]
+		\begin{itemize}[leftmargin=*,labelindent=2ex,labelsep=1.5ex,itemsep=0pt,parsep=0pt]
+			\item What are the key findings of the thesis?
+			\item How might the study be extended in the future?
+		\end{itemize}
+	\end{tcolorbox}
+\end{center}
+
+\section{Contributions of the Thesis}
+
+To recap, the two main objectives of the thesis were: (i) to develop a realistic
+computational model of the implanted cochlea for enabling knowledge development,
+and (ii) to critically evaluate some of the assumptions currently used in volume
+conduction models of the cochlea. Both of these aims have been achieved and the
+key findings are summarised below.
+
+Regarding the modelling process, the quality of the image data is key for
+geometrical accuracy. This may be a challenge in clinical settings due to
+restrictions in available imaging modalities. A high resolution volumetric
+image stack is required for reconstructing the fine anatomy, such as the
+cochlear membranes and vasculature, accurately. High resolution datasets are,
+however, a double-edged sword in that the time and computational resources
+needed to prepare the dataset and compute a solution to the system are
+significant. Nevertheless, it is possible to do this using contemporary
+technology.
+
+There is currently no consensus as to which boundary condition assumption is
+most appropriate. The studies here showed that they are not all equal. Modelling
+the whole head would be preferred for accuracy but requires additional effort
+and computation. For standalone models, the best boundary condition to impose
+depends on the species of animal being modelled. In guinea pigs, the cochlea
+protrudes into the tympanic bulla so current should exit via the temporal bone
+only. In humans, a somewhat uniform current spread is expected, so grounding at
+an infinitely large sphere may be an acceptable compromise. Simply grounding
+these surfaces is not expected to yield close matches to measured intrascalar
+voltages because the resistance of the true return path is not accounted for in
+standalone models. This discrepancy should not be manipulated by changing the
+resistivity of the surrounding bone domain because this can affect the predicted
+current distribution. An alternative would be to model it using a voltage
+offset, representing the effective voltage drop between the model boundary and
+the monopolar return. This can be determined via comparisons with \invivo{}
+data, and was found to have minimal effect on nerve fibre depolarisation as
+predicted by the activating function (AF).
+
+The accuracy of the material properties is another ongoing concern. Although
+some of the resistivity values are well known, others have not been reliably
+measured. For instance, some of the cochlear-specific tissue resistivities have
+been converted from resistances that were fitted to a lumped-element model,
+while others may only have a single data point in the literature. In addition,
+there is no data on the permittivities of cochlear tissues, which are important
+for determining the neural response more accurately.
+
+Of the three models that were created in this thesis, the guinea pig model was
+the most anatomically accurate. It was found to compare well with \invivo{} data
+that was obtained independently at the Bionics Institute in Melbourne. As such,
+this model was used for deeper investigations into two hitherto untested
+modelling assumptions: the role of the cochlear vasculature in volume
+conduction, and the validity of the quasi-static assumption.
+
+Modelling the vascular structures required substantial additional effort due to
+their pervasive and convoluted nature. The distribution of cochlear vessels was
+clearly illustrated by Microfil-enhanced microCT scans, but even with high
+resolution sTLIM images, it was not possible to reconstruct the entire vascular
+tree. The vessels in the modiolus did have an effect on AF predictions, but
+these were localised to the region nearest to the current source. The vein of
+the scala tympani (VST) played a particularly noticeable role, so it is
+recommended that future models include this structure as part of the
+reconstruction.
+
+It was possible to include time-dependent effects by using Fourier methods to
+represent the current pulse and permittivity data for some of the tissues in the
+cochlea. However, there is a very high computational cost due to the large
+number of harmonics required for a clean signal, especially in simulations using
+square-shaped stimuli. This can be significantly reduced by ramping the signal
+at the leading and trailing edges of each phase. The quasi-static criterion did
+not hold for nerve tissue across the modelled frequency range, so the assumption
+of quasi-stationarity is not valid. Stationary analyses were shown to only
+predict field values at the end of each phase. Time-dependent simulations, on
+the other hand, demonstrated dynamic processes. For example, a relaxation effect
+during the constant-current portions of the stimulus waveform contributed to an
+asymmetric AF response between the cathodic and anodic phases, which may help to
+explain some clinical observations on lead-phase performance differences.
+
+In summary, the project has demonstrated that high fidelity computational
+modelling of the electrophysiological response during CI stimulation is feasible
+for research purposes. By creating this tool for \insilico{} investigations, our
+understanding of the underlying relationships between the anatomy of the inner
+ear, the current distribution through the tissues, and subsequent neural
+response has been deepened. This in turn establishes a platform for further
+studies, such as those in the following section.
+
+\section{Future Research Directions}
+
+\begin{verse}
+	\textit{
+		``By pointing out some of the gaps in our knowledge, I hope to motivate others
+		to do some of the relevant experiments and theory.''}
+
+	\vspace{4mm}
+
+	\raggedleft{
+		--- James Ranck, 1975~\cite{ranck1975}
+	}
+\end{verse}
+
+There are a number of potential avenues for future investigations. First and
+foremost, further validation of the field quantities should be undertaken to
+verify that the model predictions are realistic throughout the cochlea, not only
+in scala tympani. For instance, microelectrodes inserted into the
+cochlea~\cite{thorne2004} may be able to provide a more complete electric field
+map for comparison with the \insilico{} voltage distribution, and neural
+response telemetry techniques~\cite{abbas1999,cohen2003} could be compared with
+the predicted activating function along the neural sheet. This data should in
+turn be used for additional testing of boundary conditions, including more
+complex boundary conditions such as a distributed resistance to ground or a
+whole head model (for the guinea pig). Further reducing uncertainties in this
+manner will help to make the models more clinically relevant.
+
+Secondly, additional measurements of the electric tissue properties should be
+obtained using modern techniques~\cite{spelman1990}. These are one of the most
+crucial inputs for the system but have yet to be determined reliably. The
+resistivities of cochlear-specific tissues is particularly important as they
+cannot be sourced from traditional compendiums. Both resistivity and
+permittivity values across a wide frequency range should also be obtained to
+enable further time-dependent simulations. There is substantial potential for a
+new gold standard to be defined here.
+
+Thirdly, the model may be used to investigate variations in electrode array
+designs, intrascalar positioning, and other modes of stimulation. For the scope
+of this thesis, a relatively standard array was inserted in a mid-scalar
+position, and the focus was on improving simulations of monopolar mode. However,
+the models can be adapted to allow for the virtual prototyping of more advanced
+electrode array designs, to observe the effect of insertion trajectories that
+are closer to or further from the modiolar wall, or to measure reductions in
+effective current spread by switching to tripolar or phased-array stimulation.
+
+Fourthly, there is scope remaining in this model to improve the nerve fibre
+trajectories, the spacing of the nodes of Ranvier, and to include non-linear
+kinetics at each node. Integration of these volume conduction models with more
+advanced models of neural excitation would enable clinical outcomes such as
+thresholds to be calculated. The prime candidates for this would be the GSEF
+model~\cite{frijns1995} or the NEURON simulation environment~\cite{hines1997}.
+As shown recently by Frijns~\etal, it is also possible to extend the modelling
+even further downstream along the hearing pipeline once a comprehensive
+excitation model has been coupled~\cite{frijns2015ciap}.
+
+Lastly, the methodology used here has highlighted some significant remaining
+challenges before patient-specific models can be generated easily. Clinical
+imaging techniques do not provide sufficient resolution for high quality
+reconstructions, so a level-of-detail study comparing, say, the guinea pig model
+to less detailed versions would be useful for determining the error
+differential. Even if high resolution scans become available in the future, the
+accurate segmentation of such large data sets would require a large time
+investment due to the lack of reliable automated algorithms. Geometry morphing
+techniques based on a generic shape may provide a feasible
+solution~\cite{hanekom2015ciap}. However, the method would need to account for
+changes in the anatomy due to disease, such as the formation of scar tissue or
+new bone and the degeneration of neural tissue. The discretisation step also
+needs to be improved, as the current iteration, while robust, still requires
+manual intervention at some stages. Different meshing programs might be sought,
+or alternatively, the application of meshless methods could be
+tested~\cite{horton2006}.
+
+\section{Closing Remarks}
+
+At the start of the twentieth century, the Wright brothers successfully
+demonstrated that powered flight could be achieved. Over the following decades,
+aircraft designs were iteratively and continually updated. The ability to fly
+through the atmosphere revolutionised transport, and commercially viable
+airlines facilitating intercontinental transport are now commonplace. The next
+frontier---space---could not however be reached using those same designs because
+the physics of flight did not transfer well to that environment.
+
+\begin{verse}
+	\textit{
+		``We humans are wet, salty beasts, and we tend to conduct electricity pretty
+		well. It not only goes where you want it to go, but also out into the
+		surrounding tissues.''}
+
+	\vspace{4mm}
+
+	\raggedleft{
+		--- Mark Bendett, 2012~\cite{boyle2012}}
+\end{verse}
+
+Cochlear implants (CIs) can be thought of as following a similar path.
+Electrical stimulation of the cochlea has proven itself to be a successful
+treatment for sensorineural hearing loss. However, evidence from multiple fronts
+points toward the physics of the cochlea ultimately constraining the ability of
+contemporary electrode array designs to deliver truly focused stimulation and
+consistent patient outcomes. This suggests that electrical stimulation may not
+be the best technique to use in the long run. In order to reach new heights in
+hearing restoration, more revolutionary designs are required. Research into
+alternative therapies is already underway, with early test results showing
+promise in overcoming the limitations of electrical
+stimulation~\cite{miller1997,izzo2006,izzo2007,richardson2009,jeschke2015}.
+This forthcoming paradigm shift in CI designs will take many more years to reach
+fruition\footnote{\href{https://xkcd.com/678/}{https://xkcd.com/678/}}, but no
+matter which technology proves most viable, our understanding of the physical
+relationships underpinning the system will be key to enabling improvements in
+sound perception and quality of life for affected individuals.

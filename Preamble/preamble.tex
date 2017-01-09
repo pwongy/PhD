@@ -1,0 +1,685 @@
+% Copyright statement
+\pagenumbering{Roman}
+
+\pdfbookmark[0]{Copyright Statement}{copyright}
+\includepdf[pages=-]{Appendix/copyright.pdf}
+
+% 
+
+\pdfbookmark[0]{Front Matter}{front}
+\cftaddtitleline{toc}{chapter}{Front Matter}{}
+
+%% =============================================================== PhD Titlepage
+
+\begin{titlepage}
+\pdfbookmark[1]{Title Page}{title}
+\thispagestyle{empty}
+\pagenumbering{roman}
+
+\begin{center}
+\setstretchtitle
+
+\vspace*{1.5cm}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=12cm]{Preamble/usyd_logo} % Logo
+\end{figure}
+
+\vspace{2cm}
+ 
+\Large{
+	{\sffamily
+		HIGH FIDELITY BIOELECTRIC MODELLING\\
+		OF THE IMPLANTED COCHLEA}
+	}
+
+	% BOUNDARY~CONDITIONS, VASCULAR~STRUCTURE,\\
+	% AND TIME-DEPENDENT EFFECTS:\\
+	% GUIDELINES FOR IMPROVING VOLUME CONDUCTION MODELS
+	% OF THE IMPLANTED~COCHLEA
+		
+	% A CRITCAL REVIEW OF || ON THE IMPORTANCE OF\\
+	% BOUNDARY~CONDITIONS, VASCULAR~STRUCTURE, AND TIME-DEPENDENT EFFECTS\\
+	% IN VOLUME CONDUCTION MODELS\\
+	% OF THE IMPLANTED~COCHLEA}
+	
+	% RESOLVING THE \textit{AD POPULUM} FALLACIES IN VOLUME~CONDUCTION MODELS
+	% OF THE IMPLANTED~COCHLEA
+	
+	% THE EFFECT OF VASCULAR~STRUCTURE IN AN ELECTRO-ANATOMIC FINITE~ELEMENT~MODEL
+	% OF VOLUME~CONDUCTION IN THE COCHLEA
+	
+% \vspace{\stretch{3}}
+% \Large{
+% 	{\sffamily Volume 2}
+% }
+	
+
+\vspace{\stretch{3}}
+
+\large {
+	Paul Chun Hymn Wong
+}
+
+\vspace{1ex}
+
+\normalsize{
+	\submissiondate
+}
+
+\vspace{\stretch{3}}
+
+\footnotesize{
+	A thesis in conjunction with Cochlear Limited\\
+	Submitted in fulfilment of the requirements for the degree of
+	Doctor~of~Philosophy\\
+	School~of~Aerospace, Mechanical and Mechatronic Engineering\\
+	Faculty of Engineering and Information Technologies\\ 
+	The~University~of~Sydney
+}
+
+\end{center}
+
+\end{titlepage}
+
+%% ================================================================= Declaration
+
+\setstretchnormal
+
+\chapter*{Declaration}
+\addcontentsline{toc}{section}{Declaration}
+\setcounter{page}{2}
+
+I declare that the work in this thesis has not previously been submitted for a 
+degree nor has it been submitted as part of requirements for a degree except as 
+fully acknowledged within the text.
+
+I also declare that the thesis has been written by me. Any help that I have 
+received in my research work and the preparation of the thesis itself has been 
+acknowledged. In addition, I declare that all information sources and literature 
+used are indicated in the thesis.
+
+% Signature of Student
+\vspace{3cm}
+
+Paul Chun Hymn Wong
+
+\submissiondate
+
+%% ==================================================================== Abstract
+
+\chapter*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+% Abstract header/footer
+	\pagestyle{fancy}
+	\lhead{{\sffamily \MakeUppercase{Abstract}}}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{{\sffamily \thepage}}
+	\rfoot{}
+
+% From Priya Narasimhan, ``How to write a good (no, great) PhD dissertation''
+% Carnegie Mellon University
+
+% Paragraph 1---What is the problem? 3--4 sentences about what the problem is in
+% simple words.
+% 
+% Paragraph 2---Why is the problem hard? Review some key literature and identify
+% knowledge gap, then obstacles to solving it.
+% 
+% Paragraph 3---What is your approach to solving this problem? ``Sit up and take
+% notice'' claims that your thesis plans to demonstrate.
+% 
+% Paragraph 4---What is the consequence of your approach? Describe the impact of
+% the research and what it enables.
+
+Cochlear implants have been highly successful at restoring sound perception in
+individuals with sensorineural hearing loss. Since their inception, improvements
+in sound perception have largely been driven by advances in signal processing.
+Despite the merits of newer and more advanced processing schemes however, the
+level of improvement has plateaued for almost a decade, and performance in some
+everyday scenarios still leaves much to be desired. This suggests that there is
+an information bottleneck at the electrode-tissue interface, which is ultimately
+responsible for enacting the biophysical changes that govern neuronal
+recruitment during electrical stimulation.
+
+Developing a complete understanding of the electrode-tissue interface is
+challenging because the cochlea is small, consists of many intricate structures,
+and is difficult to access. Modelling techniques, in conjunction with \invivo{}
+measurements, have provided useful insights into the electrical response of
+cochlear tissues, and recent advances in computational power have enabled
+spatially accurate volume conduction models for estimating the induced electric
+field. The predicted field can be fed into neural excitation models to predict
+the neuronal response. However, the models depend on a number of assumptions,
+some of which have yet to be tested, and despite their sophistication, many
+models are unable to predict patient outcomes consistently.
+
+The present thesis aims to improve the reliability of volume conduction models
+by creating new, high fidelity reconstructions of the inner ear and critically
+assessing some of the hitherto untested modelling assumptions. Firstly, the lack
+of consensus around boundary conditions for monopolar simulations is addressed.
+The evidence suggests that the unmodelled return path should be accounted for,
+perhaps by applying a voltage offset at a boundary surface some distance from
+the cochlea itself. Secondly, the role of the cochlear vasculature, which has
+been ignored despite early calls for investigation, is examined. The models show
+that the large modiolar vessels, particularly the vein of the scala tympani, can
+have a strong local effect on current flow and neural excitation near the
+stimulating electrode. Thirdly, a time-dependent simulation is performed in
+response to questions about the validity of the oft-cited quasi-static
+assumption. It appears that the assumption is not valid due to the relatively
+high permittivity of neural tissue.
+
+By demonstrating the impact of these factors, it is hoped that the
+trustworthiness of all bioelectric models of the cochlea is improved, either by
+further validating the claims of existing models, or by prompting improvements
+in future studies. Developing our understanding of the physics underlying
+cochlear implant systems will enable more robust and efficacious implant designs
+in the future, ultimately paving the way for improved sound perception and
+quality of life in individuals with sensorineural hearing loss.
+
+%% ================================================================== Dedication
+
+\chapter*{\hphantom{Dedication}}
+\thispagestyle{empty}
+\pdfbookmark[1]{Dedication}{dedication}
+
+\begin{figure}[!t]
+\centering
+\vspace{4cm}
+
+	\begin{minipage}[t]{0.77\textwidth}
+	\centering
+	\setstretchnormal
+		I dedicate this thesis to my good friend Mitchell Seow.
+		
+		I can't believe it has almost been a decade since your life was cut short so
+		unexpectedly. I hope that by earning this degree, I am in some small way
+		making up for the opportunities that you missed out on.
+		
+		See you on the other side.
+	\end{minipage}
+	
+\end{figure}
+
+%% ===================================================================== Preface
+
+\chapter*{Preface}
+\addcontentsline{toc}{section}{Preface}
+
+% Preface header/footer
+	\pagestyle{fancy}
+	\lhead{{\sffamily \MakeUppercase{Preface}}}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{{\sffamily \thepage}}
+	\rfoot{}
+
+As someone who normally does a lot of introspection, I was surprised to feel a
+little apprehensive upon looking back on the last four years of my life. What
+had I achieved? Where might I be if I had followed a different path? Was it all
+worth it?
+
+I remember starting off feeling a little uncertain about the decision to pursue
+the PhD. Despite being at the same institution, everything felt a little foreign
+(spending my first week at an overseas conference may have contributed to this).
+The friends I had completed my undergraduate studies with were no longer on
+campus, and those who had stayed behind were the quiet, unassuming types who
+mostly kept to themselves. My initial bunker buddy, Scott Townsend, bucked this
+trend but possessed a tenacity that I did not have, adding to the doubts in my
+head. The person who helped me get through that first semester though was
+undoubtedly the aptly named Gabby Chan. Her frequent visits and persistent
+noise-making were a welcome distraction from the punishing initiation that is
+the literature review, so I'm glad that she was still around during that time.
+
+Four months in, Scott and I were moved downstairs to the cubicle farm in S203,
+otherwise known as the domain of the tissue engineers. I felt even more out of
+place there, but appreciated the open space, the air conditioning, and
+especially the abundance of natural light. By then I had started to realise how
+much there was to do; Howard Lau reinforced this when he pointed out that the
+topics Phil and I had chosen were effectively three projects in one. Given the
+incredibly niche scope of my original topic, the technical difficulties of
+obtaining a suitable image stack to actually begin the modelling work, and my
+own lack of relevant background, the limited early progress was disheartening.
+However, my search for data lead to me to cross paths with Ian Curthoys and
+Christopher Wong, who were happy to collaborate on the project and kind enough
+to save me the trouble of obtaining my own ethics approval.
+
+A few months later I moved offices once again, giving up the natural light to
+join Phil and Andrian in Link 243. Soon enough, that office became a space we
+could call our own. Lights and air conditioning were installed, new furniture
+was procured, and over time a plethora of customisations were added.
+Productivity increased as we bounced ideas off each other and became more aware
+of the intricacies of our topics. A high resolution image stack that seemed
+ideal for my model was finally made available, though on the flipside, I was
+faced with the dauntingly tedious task of semi-manually segmenting those scans
+for reconstruction. In conjunction with a quarter-life crisis, 2012 was a rather
+dark year. Fortunately, it was capped off by a delightful trip to Langkawi,
+Malaysia, where I presented my research work for the first time and made a heap
+of great memories with some new friends from Europe.
+
+As it turned out, 2012 was not the end of the world, and by early 2013 it became
+clear that I needed more balance in my life. My internal supervisor gave me the
+chance to gain some official lecturing experience, which I enjoyed (though part
+of me regrets spending too much time on teaching over the course of the PhD). I
+started dabbling in new experiences, most notably the plunge into digital
+photography. The cost of entry was particularly painful for my wallet, but has
+since enriched my life many times more than the initial outlay. We saw the Dalai
+Lama and witnessed his irrepressible mirth and optimism. I also got to travel
+more, presenting my research at CIAP2013 by Lake Tahoe (bookended with visits to
+San Francisco and New York) and Medical Bionics 2013 on Phillip Island (followed
+by a few days in Melbourne). My sister commented around then that I had become
+more introverted since starting the PhD. In hindsight, this was probably true,
+but I was also still recovering from the events of the previous year.
+
+2014 was a year of change. I began socialising more and started dating again. I
+established a collaboration with Shefin George at the Bionics Institute and got
+to supervise two undergraduate honours theses, which expanded the depth of my
+thesis. My sister got married, and I shed tears in front of hundreds of wedding
+guests. My external supervisor spent most of the year abroad, and his expertise
+was often sorely missed as I prepared my first manuscript for publication.
+Towards the end of the year, I won an award at the Student Research Conference,
+and started seeing the end point\ldots or so I thought until feedback on my
+paper submission prompted me to work on additional extensions to my model.
+
+From the start of 2015 onwards, things were a blur. Between the model/manuscript
+revisions, thesis writing, and another visit to CIAP (and Seattle/Vancouver),
+there was barely any time for socialising or sleeping.%
+\footnote{\href{https://allthingsstick.files.wordpress.com/2012/02/college2.jpg?w=690}{This
+meme} summarises the situation pretty well.} Now that I've reached the end of
+this journey though, I'm glad to have compiled a thesis that I am proud to
+submit. I've learnt a lot over this time, not only in terms of technical
+knowledge but also a variety of soft skills that I didn't expect to pick up when
+I started. Perhaps most importantly, I have discovered that I really enjoy
+learning new things. And exploring the world.
+
+To all newcomers to the PhD world, chances are you'll end up making similar
+mistakes as I did (and consequently learning the same lessons), so for what it's
+worth, I'd like to offer a few words of advice based on my own experience:
+
+\begin{description}
+  	\item[\textsf{Multithread your work}] The first thing you should do is
+  	figure out what needs to be done using, for instance, a Gantt chart. You'll
+  	inevitably find that some tasks can be done independently of others. Use
+  	that to optimise your workflow because each task will almost certainly take
+  	longer to achieve than you have planned (such is the nature of research).
+  	When you hit a roadblock on one task, having an alternative to move on to
+  	will help you to maintain your momentum and give your mind time to come up
+  	with a solution.
+  	\item[\textsf{Use a productivity system}] You may have gotten away without
+  	using one of these before, but following one will help you to stay on top of
+  	your tasks. There are many different systems out there, so try them out early
+  	on to discover which works best for you. The better systems track your to-dos
+  	as well as what you've already done to remind you of your accomplishments.
+  	For me, \href{https://habitrpg.com/}{HabitRPG} was best for planning and tracking,
+  	while an ambient noise generator (I settled on
+  	\href{http://www.noisli.com/}{Noisli} for a mix of cafe sounds and brown
+  	noise), earbuds, and a good Pomodoro timer were a terrific combination for
+  	really knuckling down. (I later wrote my own Python script to combine these
+  	latter components into one convenient package---I called it
+  	``Paulmodoro''.) Don't be afraid to rest when you need to though---working
+  	while fatigued is usually counterproductive.
+	\item[\textsf{Learn to use \LaTeX}] Microsoft Word is adequate, but
+	unprofessional and prone to errors. \LaTeX{} was designed precisely for writing
+	up long documents and makes it significantly easier to keep your dissertation
+	neat and organised, even if your source files are not. Combining \LaTeX{} with
+	AutoHotkey also makes inserting references ridiculously simple. The benefits
+	manifest most clearly in the later stages of writing up when your image and
+	citation counts are in the hundreds, so it's definitely worth investing some
+	time early on to set up your editor and learn the ropes.
+  	% TODO: Put up a template somewhere?
+	\item[\textsf{Find good collaborators}] Your PhD is a pimple on a sliver
+	in the vastness of all human knowledge.%
+	\footnote{As depicted brilliantly and succinctly by
+	\href{http://matt.might.net/}{Matt Might} in
+	\href{http://matt.might.net/articles/phd-school-in-pictures/}{The Illustrated
+	Guide to a Ph.D.}.}
+	While you may be tempted to learn and do everything yourself, you'll soon
+	realise that it's much more efficient to collaborate with someone who already
+	has expertise in that area, especially if it's not a major component of your
+	project. They'll make your life a lot easier, whether it's by offering skills
+	that would take you months or years to master yourself, or letting you
+	piggyback on studies that already have ethics approval. One way to meet
+	potential collaborators is to\ldots
+	\item[\textsf{Go to conferences}] Travelling (either domestically or
+	internationally) is a wonderful and enriching experience. Apply for financial
+	assistance and present your work to other researchers because you'll receive
+	valuable feedback while also learning more about your field. It's not all about
+	the technical matters though---meeting people from all over the world is a
+	great way to make new friends and reminds you that you're not alone in the
+	quest for knowledge.
+	\item[\textsf{Remember the bigger picture}] Your PhD may feel omnipresent and
+	all-consuming at times, but you do (or should) have a life outside of the PhD
+	as well. Don't neglect those things, and try to keep everything in balance as
+	much as possible. Your relationships with those who matter most in your life
+	are especially important. There will inevitably be times when you will stumble
+	and fall, and those people are the ones who will help you pick yourself up
+	again.
+\end{description}
+
+Finally, a closing thought:
+
+\begin{verse}
+	\textit{
+		``Happiness does not come from doing easy work \hphantom{here is some
+		more filler text} but from the afterglow of satisfaction that comes after the
+		achievement of a difficult task that demanded our best.'' }
+
+	\raggedleft{
+		--- Theodore Isaac Rubin
+	}
+\end{verse}
+
+Embrace the challenge and make sure you submit something that you are proud of
+because it will make this accomplishment that much more fulfilling when you look
+back on it in the years to come.
+
+%% ============================================================ Acknowledgements
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+% Acknowledgements header/footer
+	\pagestyle{fancy}
+	\lhead{{\sffamily \MakeUppercase{Acknowledgements}}}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{{\sffamily \thepage}}
+	\rfoot{}
+
+First and foremost, I would like to thank my supervisors: Qing Li and Paul
+Carter. This project would not have been possible without your combined and
+generous guidance. To Qing, your commitment to my personal development and
+unwavering support over the past four years have demonstrated to me the true
+value of a good mentor, and I will aspire to emulate these qualities in my
+future endeavours. To Paul, your unfathomable technical knowledge and
+first-principles understanding of all things related to cochlear implant design
+have inspired me since we first met as part of the Advanced Engineering program.
+I appreciate the opportunities that you have afforded me and hope that our
+friendship continues to grow in the years to come.
+
+To Ian Curthoys, Christopher Wong, and Allan Jones, thank you for being such
+willing collaborators and for sharing various microCT image stacks with me
+over the course of this project. I have always felt humbled by your kindness
+and expertise, and your work has opened my eyes to research outside my field.
+
+Thank you to Peter Santi and Jonathon Kirk. Although I have not had the chance
+to meet either of you in person, I am very grateful for the sTSLIM dataset
+that was made available for this project and hope that the model made using
+those images helps to showcase the importance of your own research.
+
+To Nick Pawsey and Joe Giorgio, thank you for providing access to Amira, for
+generating CAD models of the electrode arrays, and for your ongoing support and
+discussion regarding the various modelling issues. I hope that my work here adds
+some value to your ongoing efforts at Cochlear.
+
+I would also like to thank Rob Shepherd and Shefin George from the Bionics
+Institute in Melbourne, Australia. Rob, thank you for showing such interest in
+my work at CIAP2013, and for encouraging me to submit an abstract for Medical
+Bionics 2013. Shefin, thanks for being such an awesome collaborator and for
+sharing your experimental data with me. I know you're going to go far and wish
+you all the best in your career.
+
+Thank you to Payal Mukherjee and Bill Gibson for allowing me to attend a
+cochlear implant surgery. As a biomedical engineer with a fascination for
+human anatomy, I have always been excited to see a procedure in person.
+Witnessing the clinical context first-hand has allowed me to gain a more
+holistic understanding of all the effort required to complete the journey of
+a medical implant, and for that I am very grateful.
+
+A special shout out to my undergraduate honours students, Li Cen and Shilpitha
+Inguva. Your friendship and assistance during 2014 was invaluable and I hope
+that we can all meet up again at some point to enjoy a game of mini-pool.
+
+To my office buddies Scott Townsend, Phillip Tran, and Andrian Sue, I have
+appreciated your mateship and encouragement throughout my postgraduate life
+more than you know. To Phil and Andrian in particular, I would not have gotten
+through this whole ordeal without your ongoing support. You've both taught me
+a lot during our time together in terms of both technical skills and more
+general life advice. Regardless of where our future paths take us, I know we
+will all look back on our many adventures during this time fondly.
+
+I also could not have gotten through this without the encouragement of my
+closest friends (you know who you are). As for a few special mentions, I'd like
+to acknowledge Gabby Chan for her company, especially during the early months of
+my PhD life. Thanks to Calla Klafas and Carina Blaker for their many hours of
+open conversation over the past few years. Thanks also to Lulu Tan for
+introducing me to Melinda Nguyen.
+
+Lastly and most importantly, I would like to thank my family for their
+unconditional love and support. I feel extremely privileged to have had the
+opportunity to undertake study at such a high level. Thank you for being patient
+with me, for putting up with my bad habits, and for being there through thick
+and thin. I love you all dearly.
+
+\clearpage
+
+%% ==================================================================== Contents
+
+% Separate formatting
+\setstretchtoc
+
+% TOCLOFT header/footer
+	\pagestyle{fancy}
+ 	\lhead{{\sffamily \MakeUppercase\leftmark}}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{{\sffamily \thepage}}
+	\rfoot{}
+	
+\setlength{\cftbeforetoctitleskip}{91pt}
+\setlength{\cftbeforeloftitleskip}{91pt}
+\setlength{\cftbeforelottitleskip}{93pt}
+
+\phantomsection
+\pdfbookmark[1]{Table of Contents}{contents}
+\tableofcontents
+\pagebreak
+
+\phantomsection
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+\pagebreak
+
+\phantomsection
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+
+% Revert formatting
+\setstretchnormal
+
+%% ======================================================== List of Publications
+
+\chapter*{List of Publications}
+\addcontentsline{toc}{section}{List of Publications}
+
+% LOP header/footer
+	\pagestyle{fancy}
+	\lhead{{\sffamily \MakeUppercase{List of Publications}}}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{{\sffamily \thepage}}
+	\rfoot{}
+
+The following is a complete listing of published works arising from this thesis.
+Copies of the papers are provided in Appendix~\ref{appendix:digital_files}.
+
+% Get formatting from tmp/Thesis.bbl
+
+\section*{Peer-reviewed Journal Papers}
+\begin{itemize}
+	\item P.~Tran, A.~Sue, \textbf{P.~Wong}, Q.~Li, and P.~Carter, ``Development of
+	HEATHER for cochlear implant stimulation using a new modeling workflow,''
+    \emph{Biomedical Engineering, IEEE Transactions on}, vol.~62, no.~2, pp.
+    728--735, February 2015.
+	\item \textbf{P.~Wong}, S.~George, P.~Tran, A.~Sue, P.~Carter, and Q.~Li,
+	``Development and Validation of a High-Fidelity Finite-Element Model of
+	Monopolar Stimulation in the Implanted Guinea Pig Cochlea,'' \emph{Biomedical
+	Engineering, IEEE Transactions on}, vol.~63, no.~1, pp. 188-198, January 2016.
+\end{itemize}
+
+\section*{Peer-reviewed Full Length Conference Papers}
+\begin{itemize}
+	\item \textbf{P.~Wong}, Q.~Li, and P.~Carter, ``Incorporating vascular
+	structure into electric volume conduction models of the cochlea,'' in
+	\emph{Biomedical Engineering and Sciences (IECBES), 2012 IEEE EMBS Conference
+	on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, December 2012, pp. 694--699.
+	\item P.~Tran, \textbf{P.~Wong}, A.~Sue, Q.~Li, and P.~Carter, ``Influence of
+	blood vessel conductivity in cochlear implant stimulation using an finite
+	element head model,'' \emph{Engineering in Medicine and Biology Society (EMBC),
+	35th Annual International Conference of the IEEE}.\hskip 1em plus 0.5em minus
+	0.4em\relax IEEE, July 2013.
+	\item A.~Sue, P.~Tran, \textbf{P.~Wong}, Q.~Li, and P.~Carter, ``Time-domain
+	finite element models of electrochemistry in intracochlear electrodes,''
+	\emph{Engineering in Medicine and Biology Society (EMBC), 35th Annual
+	International Conference of the IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax
+	IEEE, July 2013.
+	\item C.~Inguva, \textbf{P.~Wong}, A.~Sue, A.~McEwan, and P.~Carter,
+	``Frequency-Dependent Simulation of Volume Conduction in a Linear Model of
+	the Implanted Cochlea,'' \emph{Neural Engineering (NER), 7th International
+	IEEE EMBS Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+	April 2015.
+	\item A.~Sue, \textbf{P.~Wong}, P.~Tran, Q.~Li, and P.~Carter,
+	``Modeling the Effects of Electrode Recessing on Electrochemical Safety in
+	Cochlear Implant Electrodes,'' \emph{Neural Engineering (NER), 7th
+	International IEEE EMBS Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
+	IEEE, April 2015.
+\end{itemize}
+
+Selected as an Open Finalist at NER2015 (Inguva~\etal).
+
+\section*{Peer-reviewed Conference Abstracts with Posters}
+\begin{itemize}
+	\item \textbf{P.~Wong}, P.~Tran, A.~Sue, Q.~Li, and P.~Carter, ``Sensitivity of
+	cochlear volume conduction models to boundary conditions,''
+	\emph{Implantable Auditory Prostheses (CIAP), 2013 Conference on}.\hskip 1em
+	plus 0.5em minus 0.4em\relax ARO, July 2013.
+	\item P.~Tran, \textbf{P.~Wong}, A.~Sue, Q.~Li, and P.~Carter, ``Determining
+	the Boundary Conditions for Cochlear Implant Models,'' \emph{Implantable
+	Auditory Prostheses (CIAP), 2013 Conference on}.\hskip 1em plus 0.5em minus
+	0.4em\relax ARO, July 2013.
+	\item \textbf{P.~Wong}, A.~Sue, P.~Tran, Q.~Li, and P.~Carter, ``Effect of
+	petrous bone resistivities on volume conduction in the cochlea,'' \emph{Medical
+	Bionics, 3rd International Conference on}.\hskip 1em plus 0.5em minus
+	0.4em\relax The Bionics Institute, November 2013.
+	\item A.~Sue, \textbf{P.~Wong}, P.~Tran, Q.~Li, and P.~Carter, ``Modelling the
+	Electrochemistry of Platinum Intracochlear Stimulation Electrodes,''
+	\emph{Medical Bionics, 3rd International Conference on}.\hskip 1em plus 0.5em
+	minus 0.4em\relax The Bionics Institute, November 2013.
+	\item \textbf{P.~Wong}, A.~Sue, P.~Tran, C.~Inguva, Q.~Li, and P.~Carter,
+	``Time-domain simulation of volume conduction in the guinea pig cochlea,'' in
+	\emph{Implantable Auditory Prostheses (CIAP), 2015 Conference on}.\hskip 1em
+	plus 0.5em minus 0.4em\relax ARO, July 2015.
+	\item P.~Tran, \textbf{P.~Wong}, A.~Sue, Q.~Li, and P.~Carter, ``A multi-scale
+	model of cochlear implant stimulation,'' in \emph{Implantable Auditory Prostheses
+	(CIAP), 2015 Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax ARO, July
+	2015.
+	\item A.~Sue, P.~Tran, \textbf{P.~Wong}, Q.~Li, and P.~Carter, ``Investigations
+	of irreversible charge transfer from cochlear implant electrodes: in vitro and
+	in silico approaches,'' in \emph{Implantable Auditory Prostheses (CIAP), 2015
+	Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax ARO, July 2015.
+\end{itemize}
+
+Received a Monash Vision Group prize at Medical Bionics 2013 (Wong~\etal).
+
+\section*{Other Presentations}
+\begin{itemize}
+	\item \textbf{P.~Wong}, ``The effect of vascular structure on volume conduction
+	in the cochlea," \emph{Cochlear International R\&D Symposium}.\hskip 1em plus
+	0.5em minus 0.4em\relax Cochlear Limited, June 2012.
+	\item \textbf{P.~Wong}, ``Modelling electrical stimulation in the implanted
+	cochlea," \emph{Cochlear internal modelling workshop}.\hskip 1em plus 0.5em
+	minus 0.4em\relax Cochlear Limited, May 2014.
+  	\item \textbf{P.~Wong}, ``Bioelectric modelling of the implanted guinea pig
+	cochlea," \emph{6th Annual Student Research Conference}.\hskip 1em plus 0.5em
+	minus 0.4em\relax The University of Sydney, November 2014.
+\end{itemize}
+
+Awarded ``Best Presentation from the School of AMME'' at the 2014 Student
+Research Conference. Smaller meetings with the computational modelling team at
+Cochlear Limited were also held on numerous occasions.
+
+%% =============================================================== Abbreviations
+
+% \chapter*{Abbreviations}
+% 
+% \section*{Common Terms}
+% 
+% \begin{description}
+% 
+% \item[BEM] Boundary Element Method
+% \item[CAP] Compound Action Potential
+% \item[CHL] Conductive Hearing Loss
+% \item[CI] Cochlear Implant
+% \item[CT] Computed Tomography
+% \item[eCAP] Electrically-evoked Compound Action Potential
+% \item[FDM] Finite Difference Method
+% \item[FEM] Finite Element Method (or Model)
+% \item[HR] High Resolution
+% \item[LSFM] (Laser) Light-Sheet-based Fluorescence Microscopy
+% \item[N VIII] 8th Cranial Nerve (i.e. the auditory nerve)
+% \item[OC] Organ of Corti
+% \item[OPFOS] Orthogonal-Plane Fluorescence Optical Sectioning
+% \item[OW] Oval Window
+% \item[ROI] Region Of Interest
+% \item[RW] Round Window
+% \item[SHL] Sensorineural Hearing Loss
+% \item[TSLIM] Thin-Sheet Laser Imaging Microscopy
+% 
+% \end{description}
+% 
+% 
+% \section*{Blood Vessels}
+% 
+% \begin{description}
+% 
+% \item[AVA] Anterior Vestibular Artery
+% \item[SMA] Spiral Modiolar Artery
+% \item[VCA] Vestibulo-Cochlear Artery
+% 
+% \item[CMV] Common Modiolar Vein
+% \item[VCAQ] Vein of the Cochlear Aqueduct
+% \item[VCV] Vestibulo-Cochlear Vein
+% \item[VST] Vein of the Scala Tympani
+% \item[VSV] Vein of the Scala Vestibuli
+% 
+% \end{description}
+
+%% =================================================================== Quotation
+
+\chapter*{\hphantom{Quotation}}
+\thispagestyle{empty}
+
+\vfill
+
+\begin{verse}
+	
+	\textit{
+		``\ldots it is necessary to investigate the electrical geometry of the
+		cochlea, because only with a knowledge of the voltage and resistance
+		patterns is it possible to form an over-all picture of the electrical
+		situation in the cochlea.''
+	}
+	
+	\vspace{4mm}
+	
+	\raggedleft{
+		--- Georg von \bekesy, 1951
+	}
+	
+	% Georg von Békésy received the Nobel Prize in Physiology or Medicine 1961 "for
+	% his discoveries of the physical mechanism of stimulation within the cochlea".
+
+\end{verse}
+
+\vspace{1cm}
+
+% Start page numbering at 1 on next page
+\pagenumbering{arabic}
+\setcounter{page}{0}

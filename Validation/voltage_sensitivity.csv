@@ -1,0 +1,16 @@
+Tissue,Mean_deviation,Max_deviation,Strength
+Bone (homogeneous{,} $ \uprho $=6.41~$ \Omega \cdot $m),43.2,51.0,++
+{\tableindent}Modiolar bone{\textsuperscript{a}},1.76,3.60,+
+{\tableindent}Otic capsule{\textsuperscript{b}} ($ \uprho $=1.5--350~$ \Omega \cdot$m),50.7,59.0,++
+{\tableindent}Temporal bone{\textsuperscript{a}},73.9,90.8,++
+Perilymph{\textsuperscript{a}},10.3,47.2,++
+Endolymph{\textsuperscript{a}},0.51,0.65,
+Nerve{\textsuperscript{b}} ($ \uprho $=1--7.14~$ \Omega \cdot$m),3.18,5.79,++
+CSF{\textsuperscript{a}},0.83,1.06,+
+Blood{\textsuperscript{b}} ($ \uprho $=0.61--5.56~$ \Omega \cdot$m),0.18,0.61,
+Spiral ligament{\textsuperscript{b}} ($ \uprho_{\text{U}} $=2.5~$ \Omega \cdot$m),2.03,2.99,+
+Stria vascularis{\textsuperscript{b}} ($ \uprho_{\text{L}} $=3~$ \Omega \cdot$m),0.28,0.42,
+Organ of Corti{\textsuperscript{a}},0.08,0.14,
+Basilar membrane{\textsuperscript{a}},0.03,0.06,
+Reissner's membrane{\textsuperscript{a}},0.02,0.04,
+Round window membrane{\textsuperscript{c}},0.02,0.05,

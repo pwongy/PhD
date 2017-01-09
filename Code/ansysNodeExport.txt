@@ -1,0 +1,6 @@
+To grab node locations and displacements from Workbench, you'll have
+to click "Tools>Options>Simulation>Export>Include Node 
+Locations/Include Node Numbers".
+
+From there, you can output nodal coordinates by right-clicking on
+your displacement results and selecting "Export".
