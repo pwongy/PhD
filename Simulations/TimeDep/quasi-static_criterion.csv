@@ -1,0 +1,7 @@
+Tissue,Fundamental,Harmonic
+Bone~(cortical),0.01424,0.47834
+Bone~(cancellous),0.01118,0.32023
+Nerve,0.46710,0.38668
+CSF,0.00003,0.03032
+Blood,0.00417,0.14161
+Tendon / ligament,0.00770,0.14044
