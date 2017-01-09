@@ -1,0 +1,4 @@
+Method,Formulation,Discretisation
+FDM,Differential,Uniform and orthogonal grid
+FEM,Differential,Non-uniform and non-orthogonal volume elements
+BEM,Integral,Non-uniform and non-orthogonal surface elements
