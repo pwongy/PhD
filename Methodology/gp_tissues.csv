@@ -1,0 +1,26 @@
+Material,Resistivity,Min,Max
+Bone,,,
+{\tableindent Modiolar bone},6.41,0.03125,0.0625
+{\tableindent Otic capsule},70,0.0625,0.0625
+{\tableindent Temporal bone},62.5,0.125,1
+{\tableindent Stapes},,0.0625,0.0625
+Nerve,,,
+{\tableindent Peripheral processes},3,0.03125,0.0625
+{\tableindent Spiral ganglion},3,0.0625,0.125
+{\tableindent Cochlear nerve},3,0.125,0.5
+Perilymph,,,
+{\tableindent Scala tympani},0.7,0.125,0.5
+{\tableindent Scala vestibuli},0.7,0.125,0.5
+Endolymph,,,
+{\tableindent Scala media},0.6,0.03125,0.5
+{\tableindent Vestibule},0.6,0.125,0.25
+CSF,0.56,0.0625,0.25
+Blood,,,
+{\tableindent Spiral modiolar artery},1.5,0.015625,0.015625
+{\tableindent Vein of the scala tympani},1.5,0.015625,0.03125
+Reissner's membrane,10204,0.03125,0.03125
+Basilar membrane,80,0.03125,0.03125
+Organ of Corti,83.333,0.03125,0.03125
+Spiral ligament,0.6,0.0625,0.125
+Stria vascularis,188.685,0.03125,0.0625
+Round window membrane,1000,0.03125,0.03125

@@ -1,0 +1,9 @@
+Method,Adv,Disadv,Examples
+FDM,Simple to implement,Staircase effect,{Girzon~\cite{girzon1987}, Whiten~\cite{whiten2007}}
+,Easy to manipulate,Inefficient refinement,
+,{\raggedright Efficient per-node computation},,
+FEM,{\raggedright Unstructured mesh can handle complex geometries},{\raggedright Requires discretisation of the entire volume},{Finley~\cite{finley1990}, Hanekom~\cite{hanekom2001}, Rattay~\cite{rattay2001model}, Choi~\cite{choi2009}, \phantom{gap} Tognola~\cite{tognola2007}, Saba~\cite{saba2012}}
+,{\raggedright Per-element material properties with anisotropy},Most difficult to implement and solve,{Tran~\cite{tran2015}, Malherbe~\cite{malherbe2015}}
+BEM,Easier to mesh than FEM,Restrictions on geometry,{Frijns~\cite{frijns1995,frijns2001}, Kalkman~\cite{kalkman2015}}
+,{\raggedright Fewer nodes than FEM, so more efficient solution},{\raggedright Per-compartment material properties},
+,{\raggedright Good for homogeneous and unbounded problems},{\raggedright Analytical component can cause problems},

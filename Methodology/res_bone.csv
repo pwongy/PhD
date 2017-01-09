@@ -1,0 +1,30 @@
+Source,Year,Value,Comments,
+Geddes,1967,18--160,{See Geddes, Table~12~\cite{geddes1967}}
+Girzon,1987,50,Temporal bone,
+,,5,Modiolar wall,
+Finley,1990,6.3,,
+Suesserman,1992,13.73,Skull,
+,,6.41,Lateral wall,
+,,11.7,Modiolar wall,
+Frijns / Briaire,1995,6.41,From Suesserman,
+,2009,62.5,{Temporal bone (healthy, measured using EFI)}
+,,0.625,{Temporal bone (otosclerotic, assumed)}
+,,5,Modiolar bone (measured using EFI),
+,,125,Otic capsule (assumed),
+Haueisen,1995,160,Bone,
+,,21.8,Soft bone,
+,1997,160,Hard bone,
+,,25,Soft bone,
+Hanekom,2001,6.41,From Frijns~\etal~\cite{frijns1995},
+Rattay,2001,64,Adapted according to Kosterich~\etal~\cite{kosterich1983},
+Choi / Lai,2004,6.41,From Hanekom~\cite{hanekom2001},
+Micco,2006,4.27,{Modiolus, from healthy gerbil \invivo}
+,,2.88,{Modiolus, from degenerated gerbil cochlea}
+,,5.02,{Modiolus, \invitro}
+,,4.38--8.44,{Modiolus, guinea pig}
+,,8.27--15.13,{Lateral wall, guinea pig}
+Katz,2006,48.78,{Cortical bone, reported as conductivity}
+Whiten,2007,50,Used for ``normal bone'',
+Bai,2011,166.67,Compact bone,
+,,35.71,Spongy bone,
+Saba,2012,6.41,From Frijns~\etal~\cite{frijns1995},

@@ -1,0 +1,14 @@
+Source,Year,Value,Comments
+Burger,1943,2.3,{At 18$ ^{\circ} $C}
+,,1.6,{Adjusted to 37$ ^{\circ} $C}
+,,0.7,{At 37$ ^{\circ} $C without erythrocytes}
+Geddes,1967,0.61--1,Plasma only
+,,1.31--3.63,Human at various frequencies and haematocrit
+Mohapatra,1977,1.5,Standard value at normal haematocrit and body temperature
+,,0.68--3.95,Variations in haematocrit
+Visser,1992,0.64--5.56,Variations in haematocrit
+Gabriel,1996,0.7-16,
+,,1.23,At 40 Hz
+,,2.56,At 70 Hz
+Haueisen,1995,1.5,
+,1997,1.6,

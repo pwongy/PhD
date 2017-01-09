@@ -1,0 +1,17 @@
+Material,Resistivity,Min,Max
+Bone,,,
+{\tableindent Modiolar bone},5,0.0625,0.25
+{\tableindent Otic capsule},70,0.25,1
+{\tableindent Temporal bone},62.5,1,4
+Nerve,,,
+{\tableindent Spiral ganglion},3,0.0625,0.125
+{\tableindent Cochlear nerve},3,0.25,0.5
+{\tableindent Vestibular nerve},3,0.25,0.5
+{\tableindent Facial nerve},3,0.25,0.5
+Perilymph,,,
+{\tableindent Scala tympani},0.7,0.5,1
+{\tableindent Scala vestibuli},0.7,0.5,1
+{\tableindent Semicircular canals},0.7,0.25,0.5
+CSF,0.56,0.5,1
+Cochlear partition,80,0.0625,0.0625
+Spiral ligament,0.6,0.0625,0.125

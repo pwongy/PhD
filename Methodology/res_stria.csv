@@ -1,0 +1,5 @@
+Source,Year,Value,Comments
+Girzon,1987,3,
+Frijns,1995,188.68,Reported as conductivity and adjusted for thickness
+Hanekom,2001,125.79,Reported as conductivity and adjusted for thickness
+Saba,2012,188,From Frijns~\etal~\cite{frijns1995}
